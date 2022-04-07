@@ -1,0 +1,7 @@
+﻿@page "/login"
+@using AuthorizeOnRoute.Utils
+@inject BlazorSchoolAuthenticationStateProvider BlazorSchoolAuthenticationStateProvider
+@attribute [AllowAnonymous]
+
+<h3>Login</h3>
+<button class="btn btn-primary" @onclick="BlazorSchoolAuthenticationStateProvider.LoginAsync">Login</button>

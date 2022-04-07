@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthorizeOnIndividualComponent", "AuthorizeOnIndividualComponent\AuthorizeOnIndividualComponent.csproj", "{B0CFC8C3-A811-4FC1-9E0C-2A92B68A70B1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthorizeOnRoute", "AuthorizeOnRoute\AuthorizeOnRoute.csproj", "{975DD08A-DC0E-41B0-92FC-E554A4600B8C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0CFC8C3-A811-4FC1-9E0C-2A92B68A70B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0CFC8C3-A811-4FC1-9E0C-2A92B68A70B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0CFC8C3-A811-4FC1-9E0C-2A92B68A70B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0CFC8C3-A811-4FC1-9E0C-2A92B68A70B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{975DD08A-DC0E-41B0-92FC-E554A4600B8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{975DD08A-DC0E-41B0-92FC-E554A4600B8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{975DD08A-DC0E-41B0-92FC-E554A4600B8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{975DD08A-DC0E-41B0-92FC-E554A4600B8C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4C162B55-3D34-4F67-AA30-9A03154E7CB3}
+	EndGlobalSection
+EndGlobal
