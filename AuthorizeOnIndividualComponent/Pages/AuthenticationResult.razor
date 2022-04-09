@@ -1,7 +1,13 @@
 ﻿@page "/authentication-result"
+@using AuthorizeOnIndividualComponent.Utils
+@using System.Security.Claims
+@inject BlazorSchoolAuthenticationStateProvider BlazorSchoolAuthenticationStateProvider
 
 <AuthorizeView>
-    <Authorized><div>Authorized</div></Authorized>
+    <Authorized>
+        <div>Authenticated</div>
+        <div>User: @BlazorSchoolAuthenticationStateProvider.Username</div>
+    </Authorized>
     <Authorizing><div>Loading...</div></Authorizing>
-    <NotAuthorized><div>Not Authorized</div></NotAuthorized>
+    <NotAuthorized><div>Not authenticated</div></NotAuthorized>
 </AuthorizeView>

@@ -4,15 +4,29 @@ using System.Security.Claims;
 
 namespace AuthorizeOnIndividualComponent.Utils;
 
-public class BlazorSchoolAuthenticationStateProvider : AuthenticationStateProvider
+public class BlazorSchoolAuthenticationStateProvider : AuthenticationStateProvider, IDisposable
 {
     private readonly HttpClient _httpClient;
     private readonly AuthenticationDataMemoryStorage _authenticationDataMemoryStorage;
+
+    public string Username { get; set; } = "";
 
     public BlazorSchoolAuthenticationStateProvider(HttpClient httpClient, AuthenticationDataMemoryStorage authenticationDataMemoryStorage)
     {
         _httpClient = httpClient;
         _authenticationDataMemoryStorage = authenticationDataMemoryStorage;
+
+        AuthenticationStateChanged += OnAuthenticationStateChanged;
+    }
+
+    private async void OnAuthenticationStateChanged(Task<AuthenticationState> task)
+    {
+        var authenticationState = await task;
+
+        if (authenticationState is not null)
+        {
+            Username = authenticationState.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value ?? "";
+        }
     }
 
     public override Task<AuthenticationState> GetAuthenticationStateAsync()
@@ -45,4 +59,6 @@ public class BlazorSchoolAuthenticationStateProvider : AuthenticationStateProvid
         _authenticationDataMemoryStorage.Token = "";
         NotifyAuthenticationStateChanged(GetAuthenticationStateAsync());
     }
+
+    public void Dispose() => AuthenticationStateChanged -= OnAuthenticationStateChanged;
 }
