@@ -9,11 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthorizeOnRoute", "Authori
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MistakeCreateIdentityWithoutString", "Mistake1\MistakeCreateIdentityWithoutString.csproj", "{72255F19-EDB4-42B2-BC0C-07A4779C7C83}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mistake3", "Mistake3\Mistake3.csproj", "{8AB5462D-B327-4B48-8873-966ED5242F9B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MistakeGetUserInformationWrongWay", "Mistake3\MistakeGetUserInformationWrongWay.csproj", "{8AB5462D-B327-4B48-8873-966ED5242F9B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthorizeByRole", "AuthorizeByRole\AuthorizeByRole.csproj", "{37B96DFF-12BF-4817-80FD-5899EB79EABA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthorizeByPolicy", "AuthorizeByPolicy\AuthorizeByPolicy.csproj", "{E6482AA8-2129-4011-89BD-874F49745C3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthorizeByPolicy", "AuthorizeByPolicy\AuthorizeByPolicy.csproj", "{E6482AA8-2129-4011-89BD-874F49745C3D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

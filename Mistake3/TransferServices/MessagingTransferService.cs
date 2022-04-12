@@ -1,4 +1,4 @@
-﻿namespace Mistake3.TransferServices;
+﻿namespace MistakeGetUserInformationWrongWay.TransferServices;
 
 public class MessagingTransferService
 {

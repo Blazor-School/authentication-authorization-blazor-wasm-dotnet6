@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Components.Authorization;
-using Mistake3.TransferServices;
+using MistakeGetUserInformationWrongWay.TransferServices;
 using System.Security.Claims;
 
-namespace Mistake3.Utils;
+namespace MistakeGetUserInformationWrongWay.Utils;
 
 public class BlazorSchoolAuthenticationStateProvider : AuthenticationStateProvider, IDisposable
 {

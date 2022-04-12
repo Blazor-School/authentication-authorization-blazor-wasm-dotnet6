@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
-using Mistake3;
-using Mistake3.TransferServices;
-using Mistake3.Utils;
+using MistakeGetUserInformationWrongWay;
+using MistakeGetUserInformationWrongWay.TransferServices;
+using MistakeGetUserInformationWrongWay.Utils;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");
