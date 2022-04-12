@@ -7,7 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthorizeOnIndividualCompon
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthorizeOnRoute", "AuthorizeOnRoute\AuthorizeOnRoute.csproj", "{975DD08A-DC0E-41B0-92FC-E554A4600B8C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mistake1", "Mistake1\Mistake1.csproj", "{72255F19-EDB4-42B2-BC0C-07A4779C7C83}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MistakeCreateIdentityWithoutString", "Mistake1\MistakeCreateIdentityWithoutString.csproj", "{72255F19-EDB4-42B2-BC0C-07A4779C7C83}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mistake3", "Mistake3\Mistake3.csproj", "{8AB5462D-B327-4B48-8873-966ED5242F9B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthorizeByRole", "AuthorizeByRole\AuthorizeByRole.csproj", "{37B96DFF-12BF-4817-80FD-5899EB79EABA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthorizeByPolicy", "AuthorizeByPolicy\AuthorizeByPolicy.csproj", "{E6482AA8-2129-4011-89BD-874F49745C3D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +33,18 @@ Global
 		{72255F19-EDB4-42B2-BC0C-07A4779C7C83}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72255F19-EDB4-42B2-BC0C-07A4779C7C83}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72255F19-EDB4-42B2-BC0C-07A4779C7C83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AB5462D-B327-4B48-8873-966ED5242F9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AB5462D-B327-4B48-8873-966ED5242F9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AB5462D-B327-4B48-8873-966ED5242F9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AB5462D-B327-4B48-8873-966ED5242F9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37B96DFF-12BF-4817-80FD-5899EB79EABA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37B96DFF-12BF-4817-80FD-5899EB79EABA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37B96DFF-12BF-4817-80FD-5899EB79EABA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37B96DFF-12BF-4817-80FD-5899EB79EABA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6482AA8-2129-4011-89BD-874F49745C3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6482AA8-2129-4011-89BD-874F49745C3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6482AA8-2129-4011-89BD-874F49745C3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6482AA8-2129-4011-89BD-874F49745C3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

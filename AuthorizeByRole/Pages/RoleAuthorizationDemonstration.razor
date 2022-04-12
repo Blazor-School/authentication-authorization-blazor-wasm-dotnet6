@@ -1,0 +1,29 @@
+﻿@page "/role-authorization-demonstration"
+
+<h3>RoleAuthorizationDemonstration</h3>
+<AuthorizeView Roles="User">
+    <Authorized>
+        <div>You are a user</div>
+    </Authorized>
+    <NotAuthorized>
+        <div>You are not a user</div>
+    </NotAuthorized>
+</AuthorizeView>
+
+<AuthorizeView Roles="PremiumUser">
+    <Authorized>
+        <div>You are a premium user</div>
+    </Authorized>
+    <NotAuthorized>
+        <div>You are not a premium user</div>
+    </NotAuthorized>
+</AuthorizeView>
+
+<AuthorizeView Roles="Admin">
+    <Authorized>
+        <div>You are an admin</div>
+    </Authorized>
+    <NotAuthorized>
+        <div>You are not an admin</div>
+    </NotAuthorized>
+</AuthorizeView>

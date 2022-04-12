@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Components.Authorization;
 using System.Security.Claims;
 
-namespace Mistake1.Utils;
+namespace MistakeCreateIdentityWithoutString.Utils;
 
 public class BlazorSchoolAuthenticationStateProvider : AuthenticationStateProvider
 {

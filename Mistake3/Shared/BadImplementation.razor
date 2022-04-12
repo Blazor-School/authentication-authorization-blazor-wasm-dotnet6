@@ -1,0 +1,21 @@
+﻿@using System.Security.Claims
+@using Mistake3.Utils
+@inject BlazorSchoolAuthenticationStateProvider BlazorSchoolAuthenticationStateProvider
+
+<div class="border border-primary border-3">
+    <h3>@Username</h3>
+</div>
+
+@code {
+    public string Username { get; set; } = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        var authenticationState = await BlazorSchoolAuthenticationStateProvider.GetAuthenticationStateAsync();
+
+        if (authenticationState is not null)
+        {
+            Username = authenticationState.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value ?? "";
+        }
+    }
+}

@@ -1,0 +1,32 @@
+﻿@page "/mistake-demonstration"
+@using Mistake3.TransferServices
+@using Mistake3.Utils
+@inject MessagingTransferService MessagingTransferService
+@inject BlazorSchoolAuthenticationStateProvider BlazorSchoolAuthenticationStateProvider
+@implements IDisposable
+
+<h3>MistakeDemonstration</h3>
+<div>GetAuthenticationStateAsync called @MessagingTransferService.Counter time(s).</div>
+<button type="button" class="btn btn-primary" @onclick="_ => Counter++">Add Component</button>
+<button type="button" class="btn btn-primary" @onclick="_ => BlazorSchoolAuthenticationStateProvider.Login(true)">Notify Authentication State Changed</button>
+
+@for(int i = 0;i<Counter;i++)
+{
+    <BadImplementation></BadImplementation>
+}
+
+@code
+{
+    public int Counter { get; set; } = 0;
+    protected override void OnInitialized()
+    {
+        MessagingTransferService.MessageReceived += OnMessageReceived;
+    }
+
+    public void OnMessageReceived(object? sender, EventArgs eventArgs)
+    {
+        InvokeAsync(StateHasChanged);
+    }
+
+    public void Dispose() => MessagingTransferService.MessageReceived -= OnMessageReceived;
+}
