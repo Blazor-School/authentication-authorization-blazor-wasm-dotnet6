@@ -10,14 +10,16 @@
 <button type="button" class="btn btn-primary" @onclick="_ => Counter++">Add Component</button>
 <button type="button" class="btn btn-primary" @onclick="_ => BlazorSchoolAuthenticationStateProvider.Login(true)">Notify Authentication State Changed</button>
 
-@for(int i = 0; i < Counter; i++)
-{
-    <BadImplementation></BadImplementation>
-}
+<div class="w-25">
+    @for(int i = 0; i < Counter; i++)
+    {
+        <BadImplementation></BadImplementation>
+    }
+</div>
 
 @code
 {
-    public int Counter { get; set; } = 1;
+    public int Counter { get; set; } = 0;
     protected override void OnInitialized()
     {
         MessagingTransferService.MessageReceived += OnMessageReceived;
