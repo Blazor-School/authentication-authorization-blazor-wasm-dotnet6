@@ -11,7 +11,7 @@ public class UnderAgeRestrictedRequirementHandler : AuthorizationHandler<UnderAg
 
         if(userAge < minimumAgeRequired)
         {
-            context.Fail(new (this, "User is under age"));
+            context.Fail(new (this, "User is underage"));
         }
         else
         {
